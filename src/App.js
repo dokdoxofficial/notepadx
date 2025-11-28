@@ -85,7 +85,7 @@ function App() {
         </button>
 
         <input
-          type="text"
+          type="number"
           id="fontsize"
           placeholder="글자크기를 입력: 예) 10, 20"
           style={{ marginRight: "10px" }}
@@ -100,9 +100,9 @@ function App() {
           style={{ marginRight: "10px" }}
         />  
         <input
-          type="text"
+          type="number"
           id="ainumber"
-          placeholder="글자크기를 입력: 예) 10, 20"
+          placeholder="글자수를 임력"
           style={{ marginRight: "10px" }}
         />
         <button onClick={ai}>작성요청</button>
