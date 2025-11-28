@@ -22,14 +22,15 @@ function App() {
   // AI 작성 요청
   function ai() {
     const a = document.getElementById("ai");
-
+    const number = document.getElementById("ainumber")
     if (a) {
+      const textnumber = number
       const aivalue = a.value;
       setValue(value);
       setLoading("잠시만 기다려주십시오.");
       const genAI = new GoogleGenerativeAI(process.env.REACT_APP_API_KEY);
       const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
-      const prompt = `${aivalue}에 대한 글을 199자로 작성해주십시오.`;
+      const prompt = aivalue+"에 대한 글을"+textnumber+"자 이상으로작성해주십시오";
 
       model.generateContent(prompt).then((response) => {
         const originaldata = localStorage.getItem("notepadvalue") || "";
@@ -95,10 +96,23 @@ function App() {
         <input
           type="text"
           id="ai"
-          placeholder="여기에 지능화 글쓰기를 작성"
+          placeholder="여기에 지능형 글쓰기를 작성"
+          style={{ marginRight: "10px" }}
+        />  
+        <input
+          type="text"
+          id="ainumber"
+          placeholder="글자크기를 입력: 예) 10, 20"
           style={{ marginRight: "10px" }}
         />
         <button onClick={ai}>작성요청</button>
+
+          <input
+          type="text"
+          id="fontsize"
+          placeholder="글자크기를 입력: 예) 10, 20"
+          style={{ marginRight: "10px" }}
+        />
         <button id="print" onClick={() => window.print()}>
           <i className="fa-solid fa-print"></i>
         </button>
