@@ -73,7 +73,7 @@ function App() {
         <i id="c1" className="fa-solid fa-circle-notch"></i>
       </Link>
       <div id='helpguide'>
-      <h4>환영합니다.메모를 저장하고 공유할려면 흰색 원을 클릭해보세요.</h4>
+      <h4>환영합니다.메모를 저장하고 공유할려면 회색 원을 클릭해보세요.</h4>
       </div>
 
       <div className="bar">
@@ -102,7 +102,7 @@ function App() {
         <input
           type="number"
           id="ainumber"
-          placeholder="ai 가 작성할 글자수를 임력"
+          placeholder="ai가 작성할 글자수를 임력"
           style={{ marginRight: "10px" }}
         />
         <button onClick={ai}>작성요청</button>
