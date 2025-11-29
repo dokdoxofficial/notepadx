@@ -102,8 +102,9 @@ function App() {
         <input
           type="number"
           id="ainumber"
-          placeholder="글자수를 임력"
+          placeholder="ai 가 작성할 글자수를 임력"
           style={{ marginRight: "10px" }}
+          value="50"
         />
         <button onClick={ai}>작성요청</button>
 
