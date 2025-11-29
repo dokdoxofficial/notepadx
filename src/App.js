@@ -73,7 +73,7 @@ function App() {
         <i id="c1" className="fa-solid fa-circle-notch"></i>
       </Link>
       <div id='helpguide'>
-      <h4>환영합니다.메모를 작성하고 공유할려면 초록색 원을 클릭해보세요.</h4>
+      <h4>환영합니다.메모를 저장하고 공유할려면 흰색 원을 클릭해보세요.</h4>
       </div>
 
       <div className="bar">
