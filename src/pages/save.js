@@ -59,6 +59,12 @@ function belight() {
       </div>
       <br></br>
       <footer className= "footersection">
+        <h5>더 다양한 제품을 설치해보세요!--for android(.apk 및 .aab)</h5>
+        <a href='/notepadx.apk' download>Notepadx for android(.apk)설치</a>
+        <br></br>
+        <a href='/timepro.apk' download>Timepro for android(.apk)설치</a>
+        <br></br>
+        <a href='/timepro.aab' download>Timepro for android(.aab)설치</a>
         <h6>Deployed by Mit licence without Google gemini api</h6>
         <h6>Thank you for contributors and users!</h6>
         <h5>notepadx.netlify.app - notepadx-v5.0.0</h5>
