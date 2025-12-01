@@ -61,7 +61,7 @@ function belight() {
       <footer className= "footersection">
         <h6>Deployed by Mit licence without Google gemini api</h6>
         <h6>Thank you for contributors and users!</h6>
-        <h5>notepadx.netlify.app - notepadx-v5.0.0</h5>
+        <h5>notepadxurl.netlify.app - notepadxurl-v5.0.0</h5>
         <a href='https://notepadxprivacy.netlify.app'>privacy policy</a>
       </footer>
       
