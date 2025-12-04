@@ -70,7 +70,7 @@ function App() {
   return (
     <div className="App">
       <Link to="/save">
-        <i id="c1" className="fa-solid fa-circle-notch"></i>
+         <i id='c1'className="fa-regular fa-circle"></i>
       </Link>
       <div id='helpguide'>
       <h4>환영합니다.메모를 저장하고 공유할려면 회색 원을 클릭해보세요.</h4>

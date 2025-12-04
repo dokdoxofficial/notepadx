@@ -106,9 +106,14 @@ footer{
 .new{
   background-color: gray;
 }
+#deleteicon{
+  font-size:20px;
+}
 .footersection {
   border: 2px gray solid;
 }
+
+
 
 /* 다크 모드일 때 */
 body.dark-mode {
@@ -125,3 +130,4 @@ textarea.dark-mode {
   background: #ffffff;
   color: #000000;
 }
+
