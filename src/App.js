@@ -101,12 +101,17 @@ function App() {
         placeholder="여기에 메모를 작성하세요..."
       />
 
-      <footer>
+     
+      
+      <footer className="footersection">
         <a href="https://www.flaticon.com/free-icons/document" title="document icons">
-          Document icons created by Freepik - Flaticon
+        document icons created by Freepik - Flaticon
         </a>
-        
+        <h6>Deployed by Mit licence without Google gemini api</h6>
+        <h5>notepadxurl.netlify.app-notepadxurl-baseversion--v5.5.0</h5>
+        <a href='https://notepadxurl.netlify.app'>privacy policy</a>
       </footer>
+
     </div>
   );
 }
