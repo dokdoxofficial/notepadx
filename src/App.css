@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'font-gmarket';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: font-gmarket;
+  background-color: rgba(0, 0, 0, 0.84);
+  color: rgb(197, 193, 193);
+}
+
+h1{
+  font-size: 20pt;
+}
+textarea{
+  background-color: gray;
+  color:white;
+  font-size: 15pt;
+  width: 100%;
+  height: 500pt;
+  font-family: font-gmarket;
+  border:solid 2px white;
+}
+.bar{
+  display: flex;
+  gap:10px;
+  background-color: white;
+  color: black;
+  width: 100%;
+  flex-wrap: wrap;
+}
+a{
+  color: gray ;
+}
+button{
+  background-color: rgb(196, 196, 196);
+  border:2px rgb(0, 0, 0) solid;
+  font-family: font-gmarket;
+}
+input{
+  background-color: rgb(255, 255, 255);
+  border:2px rgb(0, 0, 0) solid;
+  font-family: font-gmarket;
+}
+
+footer{
+  width: 100%;
+}
+.loading{
+  background-color: rgb(58, 74, 43);
+  color:rgb(255, 252, 252);
+  border:2px rgb(0, 0, 0) solid;
+  width: 100%;
+}
+#share{
+    font-family:font-gmarket;
+    width:80%;
+    font-size:16.79pt
+}
+
+#savelogo{
+  width:50px;
+  height: 50px;
+  animation-name: fade_ani;
+  animation-duration: 1s;
+}
+
+@keyframes fade_ani {
+  from{
+     opacity: 0%;
+  }
+  to{
+     opacity: 100%;
+  }
+}
+
+@media print {
+  body {
+    background-color: white; 
+    color: black; 
+  }
+  button{
+    display: none;
+  }
+  input{
+    display: none;
+  }
+  h1{
+    display: none;
+  }
+  h5{
+    display: none;
+  }
+  #c1{
+    display: none;
+  }
+}
+#c1,#c{
+  font-size: 30px;
+  color:rgb(108, 108, 108);
+}
+.new{
+  background-color: gray;
+}
+#deleteicon{
+  font-size:20px;
+}
+.footersection {
+  border: 2px gray solid;
+}
+
+
+
+/* 다크 모드일 때 */
+body.dark-mode {
+  background: #ffffff;
+  color: #000000;
+}
+
+.footersection.dark-mode {
+  background: #ffffff;
+  color: #000000;
+}
+
+textarea.dark-mode {
+  background: #ffffff;
+  color: #000000;
+}
+

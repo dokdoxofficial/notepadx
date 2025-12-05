@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import { Link } from "react-router-dom";
 
 function App() {
   // URL에서 memo 불러오기
@@ -57,13 +56,6 @@ function App() {
 
   return (
     <div className="App">
-      <Link to="/save">
-        <i id='c1' className="fa-regular fa-circle"></i>
-      </Link>
-
-      <div id='helpguide'>
-        <h4>환영합니다! 회색 원을 클릭하면 메모를 저장하고 공유할 수 있어요.</h4>
-      </div>
 
       <div className="bar">
         {/* 글씨 축소 */}
@@ -113,6 +105,7 @@ function App() {
         <a href="https://www.flaticon.com/free-icons/document" title="document icons">
           Document icons created by Freepik - Flaticon
         </a>
+        
       </footer>
     </div>
   );
