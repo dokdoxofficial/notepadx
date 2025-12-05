@@ -100,17 +100,17 @@ footer{
   }
 }
 #c1,#c{
-  font-size: 30px;
-  color:rgb(108, 108, 108);
+  font-size: 34.99px;
+  color:rgb(175, 175, 175);
 }
 .new{
-  background-color: gray;
+  background-color: rgb(74, 74, 74);
 }
 #deleteicon{
   font-size:20px;
 }
 .footersection {
-  border: 2px gray solid;
+  border: 2px rgb(255, 255, 255) solid;
 }
 
 
