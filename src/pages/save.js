@@ -72,7 +72,7 @@ export default function Save() {
 
       <footer className="footersection">
         <h6>Deployed by Mit licence without Google gemini api</h6>
-        <h5>notepadx.netlify.app-notepadx-v5.5.0</h5>
+        <h5>notepadx.netlify.app-notepadx-v6.0.0(stable)</h5>
         <a href='https://notepadxprivacy.netlify.app'>privacy policy</a>
       </footer>
     </>
