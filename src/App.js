@@ -78,10 +78,10 @@ function App() {
 
       <div className="bar">
         <button onClick={() => (document.getElementById("notepadarea").style.fontSize = "10pt")}>
-          <i className="fa-solid fa-minus"></i>
+          <i class="fa-solid fa-minus"></i>
         </button>
         <button onClick={() => (document.getElementById("notepadarea").style.fontSize = "30pt")}>
-          <i className="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-plus"></i>
         </button>
 
         <input

@@ -131,3 +131,11 @@ textarea.dark-mode {
   color: #000000;
 }
 
+
+#darkmodetoggle{
+  font-size: 15pt;
+}
+
+#darkmodetogglebutton{
+  font-size: 15pt;
+}

@@ -64,9 +64,8 @@ export default function Save() {
       </main>
 
       <div className='footersection'>
-        <h2>설정</h2>
         <h5>테마</h5>
-        <button onClick={belight}>다크모드/라이트모드(클릭해서 변경)</button>
+        <button id="darkmodetogglebutton" onClick={belight}><i id="darkmodetoggle" class="fa-solid fa-circle-half-stroke"></i>다크모드/라이트모드(클릭해서 변경)</button>
       </div>
 
       <br />
