@@ -29,7 +29,7 @@ function App() {
       setValue(value);
       setLoading("잠시만 기다려주십시오.");
       const genAI = new GoogleGenerativeAI(process.env.REACT_APP_API_KEY);
-      const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+      const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
       const prompt = aivalue+"에 대한 글을"+textnumber+"자 정도로 작성해주십시오";
 
       model.generateContent(prompt).then((response) => {
