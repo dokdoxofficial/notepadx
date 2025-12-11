@@ -48,7 +48,7 @@ export default function Save() {
         <h2>공유</h2>
         <p>현재 작성한 노트를 공유하십시오.</p>
         <button id="share" onClick={() => navigator.share(data)}>
-          <i className="fa-solid fa-share-nodes"></i>
+          <i className="fa-solid fa-share-nodes"></i>공유
         </button>
         <hr />
 
@@ -85,7 +85,7 @@ function New({ notetitle, summary, onDelete }) {
       <h3>{notetitle}</h3>
       <h4>{summary}</h4>
       <br />
-      <button onClick={onDelete}><i id = "deleteicon" className="fa-solid fa-trash-can"></i></button>
+      <button onClick={onDelete}><i id = "deleteicon" className="fa-solid fa-trash-can"></i>제거</button>
     </div>
   );
 }
