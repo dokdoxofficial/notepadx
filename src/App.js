@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import { GoogleGenerativeAI } from "@google/generative-ai";
 import { Link } from "react-router-dom";
+//import ai libraries
+import { GoogleGenerativeAI } from "@google/generative-ai";
+
+
+
 
 function App() {
   const [color, setColor] = useState("white");
@@ -17,6 +21,11 @@ function App() {
       document.getElementById("notepadarea").style.fontSize = size + "pt";
     }
   }
+  //test
+
+
+
+
 
 
   // AI 작성 요청

@@ -51,7 +51,10 @@ export default function Save() {
           <i className="fa-solid fa-share-nodes"></i>공유
         </button>
         <hr />
-
+        <h2>로그인-권장됨</h2>
+        <Link to="/login">
+        <button>로그인하기/새로운 계정을 만들기(클릭)</button>
+        </Link>
         <h2>저장된 목록</h2>
         {notes.map((note) => (
           <New
