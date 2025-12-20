@@ -37,9 +37,10 @@ function Login() {
   if (user) {
     return (
         <>
-        <App></App>
-        <p>로그인됨</p>
+        <p>로그인됨-다음 계정으로 로그인 되었습니다!</p>
         <button onClick={logout}>{user.email}계정으로부터 로그아웃 </button>
+        <br></br>
+        <App></App>
         </>
     );
   }
