@@ -133,3 +133,13 @@ textarea.dark-mode {
 img{
   width:100%;
 }
+.loginnowsuggestion{
+  background: linear-gradient(
+  135deg,
+  #ffffff,
+  #e3f2fd,
+  #90caf9,
+  #42a5f5
+);
+color:rgb(0, 0, 0);
+}

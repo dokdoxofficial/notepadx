@@ -84,6 +84,7 @@ function App() {
       <div id='helpguide'>
       <h4>환영합니다.메모를 저장하고 공유할려면 회색 원을 클릭해보세요.</h4>
       </div>
+      <div className='loginnowsuggestion'><h3>v6에서 새롭게 추가된 기능을 지금 바로 이용해보세요:빠른 공유,새로운 테마,메모제거,지능화 글쓰기 글자수 지정...</h3></div>
 
       <div className="bar">
         <button onClick={() => (document.getElementById("notepadarea").style.fontSize = "10pt")}>
