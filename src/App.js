@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 //import ai libraries
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-
-
-
 function App() {
+  const [open, setOpen] = useState(false);
   const [color, setColor] = useState("white");
   const [value, setValue] = useState("메모의 중요성");
   const [loading, setLoading] = useState("");
@@ -74,7 +72,7 @@ function App() {
         setVa("저장된 내용을 불러왔습니다.");
       }
     }
-  }, []); // 빈 deps → 첫 렌더 때 한 번 실행
+  }, []); 
 
   return (
     <div className="App">
@@ -126,6 +124,9 @@ function App() {
         <button id="print" onClick={() => window.print()}>
           <i className="fa-solid fa-print"></i>
         </button>
+        <button onClick={() => setOpen(true)}>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </div>
       
 
@@ -135,7 +136,19 @@ function App() {
       </div>
 
       <textarea id="notepadarea" style={{ color: color }}></textarea>
-
+      <div className={`sideBox ${open ? "active" : ""}`}>
+        <button onClick={() => setOpen(false)}><i class="fa-solid fa-xmark"></i></button>
+        <h3>빠른 검색</h3>
+        <form action="https://www.google.com/search" method="get" target="_blank">
+          <input
+            type="text"
+            name="q"
+            placeholder="Google 검색"
+          />
+          <button type="submit">검색</button>
+        </form>
+        
+      </div>
       <footer>
         <a href="https://www.flaticon.com/free-icons/document" title="document icons">
           Document icons created by Freepik - Flaticon
