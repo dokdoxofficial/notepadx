@@ -79,10 +79,7 @@ function App() {
       <Link to="/save">
          <i id='c1'className="fa-regular fa-circle"></i>
       </Link>
-      <div id='helpguide'>
-      <h4>환영합니다.메모를 저장하고 공유할려면 회색 원을 클릭해보세요.</h4>
-      </div>
-      <div className='loginnowsuggestion'><h3>v6.5에서 새롭게 추가된 기능을 지금 바로 이용해보세요:빠른 공유,새로운 테마,메모제거,지능화 글쓰기 글자수 지정...</h3></div>
+      <div className='loginnowsuggestion'><h3>회색 원을 클릭해서 작성한 메모를 공유하거나 저장하세요.</h3></div>
 
       <div className="bar">
         <button onClick={() => (document.getElementById("notepadarea").style.fontSize = "20pt")}>
@@ -143,10 +140,11 @@ function App() {
           <input
             type="text"
             name="q"
-            placeholder="Google 검색"
+            placeholder="Google 로검색"
           />
           <button type="submit">검색</button>
         </form>
+        <div className='loginnowsuggestion'><h3>세계에서 가장 강력한 검색체계를 빠르게 이용<br></br>지능화된 검색을 이용하세요!</h3></div>
         
       </div>
       <footer>
