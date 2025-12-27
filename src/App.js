@@ -136,11 +136,11 @@ function App() {
       <div className={`sideBox ${open ? "active" : ""}`}>
         <button onClick={() => setOpen(false)}><i class="fa-solid fa-xmark"></i></button>
         <h3>빠른 검색</h3>
-        <form action="https://www.google.com/search" method="get" target="_blank">
+        <form action="https://www.bing.com/search?" method="get" target="_blank">
           <input
             type="text"
             name="q"
-            placeholder="Google 로검색"
+            placeholder="검색어를 임력..."
           />
           <button type="submit">검색</button>
         </form>
