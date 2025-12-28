@@ -46,7 +46,7 @@ function Login() {
   }
 
   return (
-    <div style={{ padding: 20 }}>
+    <div style={{ padding: 20 }} className="i">
       <h2>NotepadX-계정에 로그인/새로운 계정을 추가</h2>
       <input placeholder="email" onChange={e => setEmail(e.target.value)} />
       <input
@@ -57,7 +57,8 @@ function Login() {
       <br></br>
       <button onClick={signup}>다음정보를 바탕으로 회원가입</button>
       <button onClick={login}>다음정보를 바탕으로 로그인</button>
-      <p>계속하면서 귀하는 NotepadX의 개인정보처리약관에 동의하는것으로 간주합니다.</p>
+      <p>계속하면서 귀하는 NotepadX의 개인정보처리약관에 동의하는것으로 간주합니다.계인정보약관은 https://notepadxprivacy.netlify.app 에서 확인할수있습니다.</p>
+
     </div>
   );
 }

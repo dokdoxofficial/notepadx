@@ -134,7 +134,12 @@ textarea.dark-mode {
 }
 
 img{
-  width:100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.i{
+  background: url(lightobject.jpg);
 }
 .loginnowsuggestion{
   background: linear-gradient(
