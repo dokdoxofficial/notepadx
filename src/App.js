@@ -134,7 +134,7 @@ function App() {
 
       <textarea id="notepadarea" style={{ color: color }}></textarea>
       <div className={`sideBox ${open ? "active" : ""}`}>
-        <button onClick={() => setOpen(false)}><i class="fa-solid fa-xmark"></i></button>
+        <a onClick={() => setOpen(false)}><i id="cancel" class="fa-solid fa-xmark"></i></a>
         <h3>빠른 검색</h3>
         <form action="https://www.bing.com/search?" method="get" target="_blank">
           <input
@@ -144,7 +144,7 @@ function App() {
           />
           <button type="submit">검색</button>
         </form>
-        <div className='loginnowsuggestion'><h3>세계에서 가장 강력한 검색체계를 빠르게 이용<br></br>지능화된 검색을 이용하세요!</h3></div>
+        <div className='loginnowsuggestion'><h3>추천됨:새로운 빠른 검색기능을 이용하여 ntx 에서 더 빠르게 검색해보세요.</h3></div>
         
       </div>
       <footer>

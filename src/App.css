@@ -173,3 +173,7 @@ color:rgb(0, 0, 0);
   position: fixed;
   inset: 0;
 }
+#cancel{
+  font-size: 20pt;
+  color: black;
+}

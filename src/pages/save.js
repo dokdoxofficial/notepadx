@@ -29,7 +29,7 @@ export default function Save() {
   // 공유 데이터
   const notepadvalue = localStorage.getItem("notepadvalue") || "";
   const data = {
-    title: "사용자가 공유한 다음 항목을 확인해보세요.내용:",
+    title: "다음 메모가 공유됨:",
     text: notepadvalue,
   };
 
