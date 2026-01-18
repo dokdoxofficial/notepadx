@@ -68,7 +68,7 @@ ${notepad.value}
       notepad.value =
         "다음 내용이 ai로 요약되었습니다.확인해보세요:\n\n" +
         summary +
-        "\n\n----------------------\n\n" +
+        "\n\n--->요약이 완료됨\n\n" +
         notepad.value;
 
       setLoading("요약이 완료됨(google gemini 로 완료됨)");
