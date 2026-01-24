@@ -102,7 +102,6 @@ function App() {
       <div className="bar">
   <button onClick={() => setFontSize((s) => s - 10)}>-</button>
   <button onClick={() => setFontSize((s) => s + 10)}>+</button>
-
   <input
     type="color"
     value={color}
@@ -113,6 +112,8 @@ function App() {
   <button onClick={aiSummary}>작성된 내용을 요약하기</button>
 
   <button onClick={shareUrl}><i class="fa-regular fa-share-from-square"></i></button>
+  <button onClick={() => window.print()}><i class="fa-solid fa-print"></i></button>
+  <a href="https://google.com" target="_blank"><i class="fa-solid fa-magnifying-glass"></i></a>
 </div>
 
       <div className="loading">{loading||"원을 클릭하면 이 파일을 삭제하게 됨니다."}</div>
@@ -124,7 +125,7 @@ function App() {
           fontSize: `${fontSize}px`,
           color,
         }}
-        placeholder="창의적인 무언가를 임력..."
+        placeholder="창의적인 무언가를 임력해보세요..."
       />
     </div>
     

@@ -18,8 +18,8 @@ export default function Save() {
       </Link>
 
       <main>
-        <h2>공유</h2>
-        <p>이전 페이지로 이동해서 공유하세요.</p>
+        <h2>성공!</h2>
+        <p>성공적으로 삭제되었습니다.</p>
         </main>
 
       <div className='footersection'>
