@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function App() {
   const [text, setText] = useState("");
-  const [fontSize, setFontSize] = useState(30);
+  const [fontSize, setFontSize] = useState(40);
   const [color, setColor] = useState("#ffffffff");
   const [loading, setLoading] = useState("");
 
@@ -93,6 +93,7 @@ function App() {
     setText(text+result.response.text());
     setLoading("요약이 완료됨");
   }
+ 
 
   return (
     <div className="App">
@@ -113,7 +114,13 @@ function App() {
 
   <button onClick={shareUrl}><i class="fa-regular fa-share-from-square"></i></button>
   <button onClick={() => window.print()}><i class="fa-solid fa-print"></i></button>
-  <a href="https://google.com" target="_blank"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+  <button onClick={() => window.open("https://google.com")}>
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+
+
+   
 </div>
 
       <div className="loading">{loading||"원을 클릭하면 이 파일을 삭제하게 됨니다."}</div>
@@ -127,6 +134,11 @@ function App() {
         }}
         placeholder="창의적인 무언가를 임력해보세요..."
       />
+        <footer className="footersection">
+        <h6>Deployed by Mit licence without Google gemini api</h6>
+        <h5>NotepadX.netlify.app-NotepadX-v8.0.1</h5>
+        <a href='https://notepadxprivacy.netlify.app'>privacy policy</a>
+      </footer>
     </div>
     
   );
