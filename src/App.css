@@ -135,39 +135,38 @@ img{
 .i{
   background: url(lightobject.jpg);
 }
-.loginnowsuggestion{
-  background: linear-gradient(
-  135deg,
-  #ffffff,
-  #e3f2fd,
-  #90caf9,
-  #42a5f5
-);
-color:rgb(0, 0, 0);
-}
 
-
-.sideBox {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-  background-color: rgb(173, 173, 173);
-  color:white;
-}
-
-.sideBox.active {
-  transform: translateX(0);
-}
-
-.overlay {
-  position: fixed;
-  inset: 0;
-}
 #cancel{
   font-size: 20pt;
   color: black;
+}
+.side-tool {
+  position: fixed;
+  top: 0;
+  right: -260px; /* 처음엔 화면 밖 */
+  width: 260px;
+  height: 100vh;
+  background: #111;
+  color: white;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.side-tool.open {
+  right: 0; /* 열리면 들어옴 */
+}
+
+.side-tool button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+input[type=text] {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 15pt;
 }

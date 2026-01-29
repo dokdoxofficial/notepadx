@@ -9,6 +9,9 @@ function App() {
   const [fontSize, setFontSize] = useState(40);
   const [color, setColor] = useState("#ffffffff");
   const [loading, setLoading] = useState("");
+  const [showTool, setShowTool] = useState(false);
+  const [maxLength, setMaxLength] = useState(10);
+
 
   /* 🔹 URL → 상태 복원 */
   function shareUrl() {
@@ -118,6 +121,9 @@ function App() {
   <button onClick={() => window.open("https://google.com")}>
     <i class="fa-solid fa-magnifying-glass"></i>
   </button>
+<button onClick={() => setShowTool((v) => !v)}>
+  <i className="fa-solid fa-bars"></i>
+</button>
 
 
    
@@ -134,11 +140,27 @@ function App() {
         }}
         placeholder="창의적인 무언가를 임력해보세요..."
       />
-        <footer className="footersection">
+
+<div className={`side-tool ${showTool ? "open" : ""}`}>
+  <button onClick={() => setShowTool(false)}><i class="fa-solid fa-x"></i></button>
+  <h2>아이디어 정리</h2>
+  <input type="number" placeholder="아이디어의 최대 길이를 지정..." onChange={(e) => setMaxLength(Number(e.target.value))}></input>
+  <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
+  <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
+  <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
+  <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
+  
+  <footer className="footersection">
+        <h5>Version info</h5>
         <h6>Deployed by Mit licence without Google gemini api</h6>
         <h5>NotepadX.netlify.app-NotepadX-v8.1.0</h5>
         <a href='https://notepadxprivacy.netlify.app'>privacy policy</a>
-      </footer>
+   </footer>
+
+</div>
+
+
+      
     </div>
     
   );
