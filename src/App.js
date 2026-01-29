@@ -149,11 +149,11 @@ function App() {
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
-  
+
   <footer className="footersection">
         <h5>Version info</h5>
         <h6>Deployed by Mit licence without Google gemini api</h6>
-        <h5>NotepadX.netlify.app-NotepadX-v8.1.0</h5>
+        <h5>NotepadX.netlify.app-NotepadX-v8.5.1</h5>
         <a href='https://notepadxprivacy.netlify.app'>privacy policy</a>
    </footer>
 
