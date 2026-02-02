@@ -12,7 +12,10 @@ function App() {
   const [showTool, setShowTool] = useState(false);
   const [maxLength, setMaxLength] = useState(10);
 
-
+  function belight() {
+    const element = document.body;
+    element.classList.toggle("dark-mode");
+  }
   /* 🔹 URL → 상태 복원 */
   function shareUrl() {
   const url = window.location.href;
@@ -87,9 +90,9 @@ function App() {
     const genAI = new GoogleGenerativeAI(
       process.env.REACT_APP_API_KEY
     );
-    const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash-lite",
-    });
+const model = genAI.getGenerativeModel({
+  model: "gemini-1.5-flash-lite", 
+});
 
     const prompt = `다음 글을 간단히 요약해줘:\n${text}`;
     const result = await model.generateContent(prompt);
@@ -149,8 +152,12 @@ function App() {
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
-
+  <h2>제안</h2>
+  <button onClick={aiWrite}>아이디어 생성</button>
+  <h2>제어</h2>
   <footer className="footersection">
+       <h5>라이트/다크 모드</h5>
+        <button id="darkmodetogglebutton" onClick={belight}><i id="darkmodetoggle" class="fa-solid fa-circle-half-stroke"></i>라이트/다크 모드(클릭해서 변경해보세요!)</button>
         <h5>Version info</h5>
         <h6>Deployed by Mit licence without Google gemini api</h6>
         <h5>NotepadX.netlify.app-NotepadX-v8.5.1</h5>
