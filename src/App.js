@@ -91,7 +91,7 @@ function App() {
       process.env.REACT_APP_API_KEY
     );
 const model = genAI.getGenerativeModel({
-  model: "gemini-1.5-flash-lite", 
+  model: "gemini-2.5-flash-lite", 
 });
 
     const prompt = `다음 글을 간단히 요약해줘:\n${text}`;
