@@ -146,14 +146,17 @@ const model = genAI.getGenerativeModel({
 
 <div className={`side-tool ${showTool ? "open" : ""}`}>
   <button onClick={() => setShowTool(false)}><i class="fa-solid fa-x"></i></button>
-  <h2>아이디어 정리</h2>
+  <h2>아이디어 메니저</h2>
   <input type="number" placeholder="아이디어의 최대 길이를 지정..." onChange={(e) => setMaxLength(Number(e.target.value))}></input>
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
-  <h2>제안</h2>
-
+  <h2>제안 및 팁</h2>
+  <ul>
+    <li>새로운 아이디어 메니저를 사용해보세요.</li>
+    <li>url로 공유할때 카카오톡을 이용하면 모두보기를 클릭한후에 공유될수있어요.</li>
+  </ul>
   <h2>제어</h2>
   <footer className="footersection">
        <h5>라이트/다크 모드</h5>
