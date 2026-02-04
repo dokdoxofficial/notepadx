@@ -160,7 +160,7 @@ const model = genAI.getGenerativeModel({
         <button id="darkmodetogglebutton" onClick={belight}><i id="darkmodetoggle" class="fa-solid fa-circle-half-stroke"></i>라이트/다크 모드(클릭해서 변경해보세요!)</button>
         <h5>Version info</h5>
         <h6>Deployed by Mit licence without Google gemini api</h6>
-        <h5>NotepadX.netlify.app-NotepadX-v8.5.1</h5>
+        <h5>NotepadX.netlify.app-NotepadX-v8.9.0</h5>
         <a href='https://notepadxprivacy.netlify.app'>privacy policy</a>
    </footer>
 
