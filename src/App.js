@@ -153,7 +153,7 @@ const model = genAI.getGenerativeModel({
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
   <h2>제안</h2>
-  <button onClick={aiWrite}>아이디어 생성</button>
+
   <h2>제어</h2>
   <footer className="footersection">
        <h5>라이트/다크 모드</h5>
