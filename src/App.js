@@ -76,9 +76,9 @@ function App() {
       model: "gemini-2.5-flash-lite",
     });
 
-    const prompt = "다음 주제에 대해 글을 작성해줘(important!요약한 내용만 표시되게 해야됩니다.):\n" + text;
+    const prompt = "너는 유능한 작문가야.다음 주제에 대해 창의력있고 필요한 글을 작성해줘.::\n" + text;
     const result = await model.generateContent(prompt);
-    setText(text+result.response.text());
+    setText(text + "\n" + result.response.text());
     setLoading("AI작성이 완료됨");
   }
 
@@ -94,9 +94,9 @@ const model = genAI.getGenerativeModel({
   model: "gemini-2.5-flash-lite", 
 });
 
-    const prompt = `다음 글을 간단히 요약해줘:\n${text}`;
+    const prompt = `너의 역할은 요약api 야.다음 주제에 대해 요약을 1-2문장정도로 작성해줘.:\n${text}`;
     const result = await model.generateContent(prompt);
-    setText(text+result.response.text());
+    setText(text + "\n" + result.response.text());
     setLoading("요약이 완료됨");
   }
  
