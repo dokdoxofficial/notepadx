@@ -152,16 +152,14 @@ const model = genAI.getGenerativeModel({
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
-  <h2>제안 및 팁</h2>
+  <h2>새로운 기능 및 팁</h2>
   <ul>
-    <li>새로운 아이디어 메니저를 사용해보세요.</li>
     <li>url로 공유할때 카카오톡을 이용하면 모두보기를 클릭한후에 공유될수있어요.</li>
+    <li>회색원을 클릭해보세요!그럼 작성한 파일이 삭제되요.</li>
   </ul>
-  <h2>제어</h2>
   <footer className="footersection">
        <h5>라이트/다크 모드</h5>
         <button id="darkmodetogglebutton" onClick={belight}><i id="darkmodetoggle" class="fa-solid fa-circle-half-stroke"></i>라이트/다크 모드(클릭해서 변경해보세요!)</button>
-        <h5>Version info</h5>
         <h6>Deployed by Mit licence without Google gemini api</h6>
         <h5>NotepadX.netlify.app-NotepadX-v8.9.5</h5>
         <a href='https://notepadxprivacy.netlify.app'>privacy policy</a>
