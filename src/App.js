@@ -131,7 +131,7 @@ const model = genAI.getGenerativeModel({
 
    
 </div>
-
+ 
       <div className="loading">{loading||"원을 클릭하면 이 파일을 삭제하게 됨니다."}</div>
 
       <textarea
@@ -152,8 +152,7 @@ const model = genAI.getGenerativeModel({
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
   <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
-  <h2>새로운 기능 및 팁</h2>
-  <ul>
+ <ul>
     <li>url로 공유할때 카카오톡을 이용하면 모두보기를 클릭한후에 공유될수있어요.</li>
     <li>회색원을 클릭해보세요!그럼 작성한 파일이 삭제되요.</li>
   </ul>
