@@ -10,7 +10,6 @@ function App() {
   const [color, setColor] = useState("#ffffffff");
   const [loading, setLoading] = useState("");
   const [showTool, setShowTool] = useState(false);
-  const [maxLength, setMaxLength] = useState(10);
 
   function belight() {
     const element = document.body;
@@ -147,11 +146,9 @@ const model = genAI.getGenerativeModel({
 <div className={`side-tool ${showTool ? "open" : ""}`}>
   <button onClick={() => setShowTool(false)}><i class="fa-solid fa-x"></i></button>
   <h2>아이디어 메니저</h2>
-  <input type="number" placeholder="아이디어의 최대 길이를 지정..." onChange={(e) => setMaxLength(Number(e.target.value))}></input>
-  <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
-  <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
-  <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
-  <input type="text" maxLength={maxLength} placeholder="아이디어를 임력..."></input>
+  <input type = "text" placeholder="아이디어를 입력해보세요"></input>
+  <input type = "text" placeholder="아이디어를 입력해보세요"></input>
+  <input type = "text" placeholder="아이디어를 입력해보세요"></input>
  <ul>
     <li>url로 공유할때 카카오톡을 이용하면 모두보기를 클릭한후에 공유될수있어요.</li>
     <li>회색원을 클릭해보세요!그럼 작성한 파일이 삭제되요.</li>
