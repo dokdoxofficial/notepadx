@@ -17,7 +17,7 @@ export default function Save() {
       <main>
         <h2>작성된 파일이 삭제됨.</h2>
         <p>성공적으로 삭제되었습니다.</p>
-        <a href='https://notepadx.netlify.app'>개발자</a>
+        <a href='https://notepadx.netlify.app'>뒤로갈려면 여기를 클릭하거나 흰색원을 클릭해보세요.</a>
         </main>
         
   
