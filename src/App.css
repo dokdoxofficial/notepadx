@@ -4,7 +4,7 @@
     font-weight: 900;
     font-display: swap;
 }
-* {
+*{
   box-sizing: border-box;
 }
 body{
@@ -12,14 +12,10 @@ body{
   background-color: rgba(0, 0, 0, 0.84);
   color: rgb(197, 193, 193);
 }
-
-h1{
-  font-size: 20pt;
-}
 textarea{
-  background-color: rgb(93, 93, 93);
+  background-color: rgb(69, 69, 69);
   color:white;
-  font-size: 15pt;
+  font-size: 25pt;
   width: 100%;
   height: 500pt;
   font-family: font-gmarket;
@@ -28,144 +24,21 @@ textarea{
 .bar{
   display: flex;
   gap:10px;
-  background-color:  #f5f5f5;;
-  color: black;
+  background-color:  #8f8f8f;;
+  color: rgb(0, 0, 0);
   width: 100%;
   flex-wrap: wrap;
   border:solid 0.5px rgb(255, 255, 255);
-}
-a{
-  color: gray ;
 }
 button{
   background-color: rgb(196, 196, 196);
   border:2px rgb(0, 0, 0) solid;
   font-family: font-gmarket;
 }
-input{
-  background-color: rgb(255, 255, 255);
-  border:2px rgb(0, 0, 0) solid;
-  font-family: font-gmarket;
-}
-
 footer{
-  width: 100%;
+    border:2px rgb(255, 255, 255) solid;
 }
-.loading{
-  background-color: #8a8a8a;
-  color:rgb(255, 252, 252);
-  border:solid 0.5px rgb(255, 255, 255);
-  width: 100%;
-}
-#share{
-    font-family:font-gmarket;
-    width:80%;
-    font-size:16.79pt
+a{
+  color:green;
 }
 
-#savelogo{
-  width:50px;
-  height: 50px;
-}
-
-
-@media print {
-  body {
-    background-color: white; 
-    color: black; 
-  }
-  button{
-    display: none;
-  }
-  input{
-    display: none;
-  }
-  h1{
-    display: none;
-  }
-  h5{
-    display: none;
-  }
-  #c1{
-    display: none;
-  }
-}
-#c1,#c{
-  font-size: 34.99px;
-  color:rgb(175, 175, 175);
-}
-.new{
-  background-color: rgb(140, 140, 140);
-}
-#deleteicon{
-  font-size:20px;
-}
-#deleteicon{
-  font-size:20px;
-}
-.footersection {
-  border: 2px rgb(255, 255, 255) solid;
-}
-
-
-
-/* 다크 모드일 때 */
-body.dark-mode {
-  background: #ffffff;
-  color: #000000;
-}
-
-.footersection.dark-mode {
-  background: #ffffff;
-  color: #000000;
-}
-
-textarea.dark-mode {
-  background: #ffffff;
-  color: #000000;
-}
-
-
-
-
-img{
-  max-width: 100%;
-  height: auto;
-}
-
-
-
-#cancel{
-  font-size: 20pt;
-  color: black;
-}
-.side-tool {
-  position: fixed;
-  top: 0;
-  right: -260px; /* 처음엔 화면 밖 */
-  width: 260px;
-  height: 100vh;
-  background: #909090;
-  color: white;
-  padding: 20px;
-  transition: right 0.3s ease;
-  z-index: 1000;
-}
-
-.side-tool.open {
-  right: 0; /* 열리면 들어옴 */
-}
-
-.side-tool button {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 10px;
-}
-input[type=text] {
-  width: 100%;
-  padding: 8px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  font-size: 15pt;
-}
