@@ -30,14 +30,23 @@ textarea{
   border:solid 0.5px rgb(255, 255, 255);
 }
 button{
-  background-color: rgb(196, 196, 196);
-  border:2px rgb(0, 0, 0) solid;
+  border:2px solid;
+  border-radius: 6px;
   font-family: font-gmarket;
 }
 footer{
     border:2px rgb(255, 255, 255) solid;
 }
-a{
+.greenlink{
   color:green;
+}
+#info{
+  color:black;
+}
+#state{
+  background-color: #414141; 
+  border:2px solid;
+  border-radius: 6px;
+  color:white;
 }
 
