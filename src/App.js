@@ -1,5 +1,6 @@
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { GoogleGenerativeAI } from "@google/generative-ai";
 import { useState , useEffect} from 'react';
 
 export default function App() {
@@ -40,6 +41,18 @@ useEffect(() => {
 }, [textsize]);
 
 
+const genAI = new GoogleGenerativeAI(process.env.REACT_APP_GEMINI_API_KEY);
+
+const askGemini = async () => {
+  const model = genAI.getGenerativeModel({
+    model: "gemini-2.5-flash",
+  });
+  const result = await model.generateContent("당신은 유능한 글쓰기를 하는 사람입니다!"+data + "에 맞는 잛은 영감을 줄수있는 80자 사이정도의 글을 작성해주세요. ");
+  const text = result.response.text();
+  setData(text + data)
+};
+
+
   return (
     <>
     <h1>NotepadX</h1>
@@ -47,6 +60,7 @@ useEffect(() => {
        <button><i class="fa-solid fa-plus" onClick={()=>settextsize(textsize+10)}></i></button>
        <button><i class="fa-solid fa-minus" onClick={()=>settextsize(textsize-10)}></i></button>
        <button><a id = "info" href='#footer'><i class="fa-regular fa-circle-question"></i></a></button>
+       <button onClick={askGemini}>작성된 내용을 바탕으로 글쓰기</button>
        <div id='state'>{filestate}</div>
     </div>
     <main>
