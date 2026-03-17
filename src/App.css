@@ -50,3 +50,18 @@ footer{
   color:white;
 }
 
+@media print {
+footer{
+  display:none
+}
+#steate{
+  display:none
+}
+.bar{
+  display:none
+}
+h1{
+  display:none
+}
+}
+

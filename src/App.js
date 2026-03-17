@@ -59,6 +59,7 @@ const askGemini = async () => {
     <div className="bar">
        <button><i class="fa-solid fa-plus" onClick={()=>settextsize(textsize+10)}></i></button>
        <button><i class="fa-solid fa-minus" onClick={()=>settextsize(textsize-10)}></i></button>
+       <button onClick={()=>window.print()}><i class="fa-solid fa-print"></i></button>
        <button><a id = "info" href='#footer'><i class="fa-regular fa-circle-question"></i></a></button>
        <button onClick={askGemini}>작성된 내용을 바탕으로 글쓰기</button>
        <div id='state'>{filestate}</div>
