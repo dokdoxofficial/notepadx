@@ -48,7 +48,7 @@ const askGemini = async () => {
 };
 
 function save(){
-    setfilestate("저장할려면 set as pdf 또는 pdf 로 저장을 클릭하고 save 버튼을 클릭하세요.")
+    setfilestate("저장할려면 set as pdf 또는 pdf 로 저장을 클릭하고 save 버튼을 클릭하세요.작동하지 않나요?")
     window.print()
 }
   return (
