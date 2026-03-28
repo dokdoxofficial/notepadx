@@ -20,6 +20,9 @@ You can check our privacy policy [https://notepadxprivacy.netlify.app](https://n
 
 Please visit this website(github) [https://github.com/dokdoxofficial/notepadx/tags](https://github.com/dokdoxofficial/notepadx/tags)
 
+### Version
+
+
 
 
 

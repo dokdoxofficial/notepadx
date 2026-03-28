@@ -21,6 +21,13 @@ useEffect(() => {
   if (data !==""){
        setfilestate("저장되었습니다.새로운 변동사항이 자동으로 저장됩니다.")
   } 
+  if (data.includes("cmddelete")){
+     setData(data.replace(data,""))
+  }
+  if (data.includes("cmdhelp")) {
+      setfilestate("cmd 를 입력해서 명렁어를 임력할수있습니다.더 많은 도움말이 필요하면 물음표 버튼을 클릭해보세요.예시로 cmdhelp를 임력하면 다음과 같이 표시됩니다.또한 cmddelete 라 입력하면 모든 데이터가 제거됩니다.")
+  }
+
 }, [data]);
 
 
@@ -48,7 +55,7 @@ const askGemini = async () => {
 };
 
 function save(){
-    setfilestate("저장할려면 set as pdf 또는 pdf 로 저장을 클릭하고 save 버튼을 클릭하세요.작동하지 않나요?")
+    setfilestate("저장할려면 'set as pdf' 또는 'pdf 로 저장'을클릭하고 save버튼을 클릭하세요.")
     window.print()
 }
   return (
