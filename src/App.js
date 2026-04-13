@@ -76,7 +76,7 @@ function summarize(){
        <button><a id = "info" href='#footer'><i class="fa-regular fa-circle-question"></i></a></button>
        <button onClick={save}><i class="fa-solid fa-down-long"></i></button>
        <button onClick={askGemini}>작성된 내용으로 ai글쓰기</button>
-       <button onclick={summarize}>내용요약</button>
+       <button onClick={summarize}>내용요약</button>
        <div id='state'>{filestate}</div>
     </div>
     <main>
