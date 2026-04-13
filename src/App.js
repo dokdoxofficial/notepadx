@@ -6,7 +6,7 @@ import { useState , useEffect} from 'react';
 export default function App() {
 const [textsize, settextsize] = useState(25)
 const [data, setData] = useState("");
-const [filestate, setfilestate] = useState("저장을 준비하는중...");
+const [filestate, setfilestate] = useState("내용을 입력해보세요.");
 
 useEffect(() => {
   const saved = localStorage.getItem("textareadata");
@@ -19,13 +19,10 @@ useEffect(() => {
 useEffect(() => {
   localStorage.setItem("textareadata", data);
   if (data !==""){
-       setfilestate("저장되었습니다.새로운 변동사항이 자동으로 저장됩니다.")
+       setfilestate("저장됨-새로운 변동사항이 자동으로 저장됩니다.")
   } 
-  if (data.includes("cmddelete")){
-     setData(data.replace(data,""))
-  }
-  if (data.includes("cmdhelp")) {
-      setfilestate("cmd 를 입력해서 명렁어를 임력할수있습니다.더 많은 도움말이 필요하면 물음표 버튼을 클릭해보세요.예시로 cmdhelp를 임력하면 다음과 같이 표시됩니다.또한 cmddelete 라 입력하면 모든 데이터가 제거됩니다.")
+  if (data.includes("notepadx")){
+     setData(data.replace(data,"NotepadX!-v10.1-integrated"))
   }
 
 }, [data]);
@@ -55,8 +52,19 @@ const askGemini = async () => {
 };
 
 function save(){
-    setfilestate("저장할려면 'set as pdf' 또는 'pdf 로 저장'을클릭하고 save버튼을 클릭하세요.")
+    setfilestate("저장할려면 'set as pdf'또는'pdf 로 저장'을클릭하고 save버튼을 클릭하세요.")
     window.print()
+}
+
+function summarize(){
+  const model = genAI.getGenerativeModel({
+    model: "gemini-2.5-flash",
+  }); 
+  model.generateContent("당신은 유능한 요약가입니다!"+data + "를 요약해주세요.요약할때는 세밀한 내용을 잘 살리되 너무 과하지 않게 해주세요.").then((result) => {
+    const text = result.response.text();
+    setData(text + data)
+  }
+  )
 }
   return (
     <>
@@ -68,6 +76,7 @@ function save(){
        <button><a id = "info" href='#footer'><i class="fa-regular fa-circle-question"></i></a></button>
        <button onClick={save}><i class="fa-solid fa-down-long"></i></button>
        <button onClick={askGemini}>작성된 내용으로 ai글쓰기</button>
+       <button onclick={summarize}>내용요약</button>
        <div id='state'>{filestate}</div>
     </div>
     <main>
@@ -84,7 +93,7 @@ function save(){
          <h4>NotepadX 는 완전히 무료입니다.심지어 오픈소스 기반 프로젝트로써 여러 프라이버시를 보호합니다.NotepadX에 입력한 모든 내용은 임력한 디바이스에 저장되므로
             개인정보가 근본적으로 보호됩니다.또한 개인정보 보호 약관을 확인할수도 있습니다.<a className = "greenlink" href='https://notepadxprivacy.netlify.app'>여기를 클릭해서 확인해보세요.</a>
          </h4>
-        <h5>NotepadX v10-integrated Deployed under Mit licence except the icon</h5>
+        <h5>NotepadX v10.1-integrated Deployed under Mit licence except the icon</h5>
         <a className = "greenlink" href="https://www.flaticon.com/free-icons/notepad" title="notepad icons">Notepad icons created by Freepik - Flaticon</a>
     </footer>
     </>
