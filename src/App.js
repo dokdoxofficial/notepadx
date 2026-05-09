@@ -92,7 +92,7 @@ function summarize(){
          <h3>NotepadX 는 무료인가요?</h3>
          <h4>NotepadX 는 완전히 무료입니다.심지어 오픈소스 기반 프로젝트로써 여러 프라이버시를 보호합니다.NotepadX에 입력한 모든 내용은 임력한 디바이스에 저장되므로
             개인정보가 근본적으로 보호됩니다.또한 개인정보 보호 약관을 확인할수도 있습니다.<a className = "greenlink" href='https://notepadxprivacy.netlify.app'>여기를 클릭해서 자세히 확인해보세요.</a>또한 Google Gemini API를 활용한 AI 글쓰기 기능과 요약 기능을 사용하면서 생기는 데이터는 Google의 개인정보 보호 정책에 따라 처리되고 있습니다.
-            따라서 인공지능 데이터가 학습에 사용될수도 있습니다.따라서 민감한 정보를 입력하지 말아주십시오.
+            따라서 인공지능 데이터가 학습에 사용될수도 있습니다.따라서 민감한 정보를 입력하지 말아주세요.
          </h4>
         <h5>NotepadX v10.1-integrated Deployed under Mit licence except the icon and Google Gemini API</h5>
         <a className = "greenlink" href="https://www.flaticon.com/free-icons/notepad" title="notepad icons">Notepad icons created by Freepik - Flaticon</a>
