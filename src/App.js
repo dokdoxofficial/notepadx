@@ -6,7 +6,7 @@ import { useState , useEffect} from 'react';
 export default function App() {
 const [textsize, settextsize] = useState(25)
 const [data, setData] = useState("");
-const [filestate, setfilestate] = useState("내용을 입력해보세요.");
+const [filestate, setfilestate] = useState("도움말-내용을 입력해보세요.");
 
 useEffect(() => {
   const saved = localStorage.getItem("textareadata");
@@ -52,7 +52,7 @@ const askGemini = async () => {
 };
 
 function save(){
-    setfilestate("저장할려면 'set as pdf'또는'pdf 로 저장'을클릭하고 save버튼을 클릭하세요.")
+    setfilestate("도움말-저장할려면 'set as pdf'또는'pdf 로 저장'을클릭하고 save버튼을 클릭하세요.")
     window.print()
 }
 
