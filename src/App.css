@@ -35,7 +35,7 @@ button{
   font-family: font-gmarket;
 }
 footer{
-    border:2px rgb(255, 255, 255) solid;
+    border:1px rgb(255, 255, 255) solid;
 }
 .greenlink{
   color:green;
@@ -45,8 +45,7 @@ footer{
 }
 #state{
   background-color: #414141; 
-  border:2px solid;
-  border-radius: 6px;
+  border:1px solid;
   color:white;
 }
 

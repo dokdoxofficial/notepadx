@@ -77,25 +77,22 @@ function summarize(){
        <button onClick={save}><i class="fa-solid fa-down-long"></i></button>
        <button onClick={askGemini}>작성된 내용으로 ai글쓰기</button>
        <button onClick={summarize}>내용요약</button>
-       <div id='state'>{filestate}</div>
     </div>
+    <div id='state'>{filestate}</div>
     <main>
         <textarea id = "textarea" value={data} onChange={(e) => setData(e.target.value)} style={{fontSize:textsize+"px"}} placeholder='아무글자나 임력해보세요!'></textarea>
     </main>
     <br></br>
     <footer id = "footer">
-        <h3>NotepadX 를 이용해서 어떻게 메모해야되나요?</h3>
+        <h3>NotepadX 를 어디에 활용할수있을까요?</h3>
         <h4>NotepadX 에 큰 회색 영역에서 모든 글자들을 입력할수있습니다.이를 활용해서 다양한 
             용도에서 사용할수있습니다!예를 들어 학교에서 배운 새로운 지식을 적어두거나 무언가를 암기할때 또는 공부할때 이를 활용할수있습니다.또한 회사
             에서 여러 작업을 수행하면서 필요한 정보를 미리 입력할수도 있습니다.
          </h4>
-         <h3>NotepadX 는 무료인가요?</h3>
-         <h4>NotepadX 는 완전히 무료입니다.심지어 오픈소스 기반 프로젝트로써 여러 프라이버시를 보호합니다.NotepadX에 입력한 모든 내용은 임력한 디바이스에 저장되므로
-            개인정보가 근본적으로 보호됩니다.또한 개인정보 보호 약관을 확인할수도 있습니다.<a className = "greenlink" href='https://notepadxprivacy.netlify.app'>여기를 클릭해서 자세히 확인해보세요.</a>또한 Google Gemini API를 활용한 AI 글쓰기 기능과 요약 기능을 사용하면서 생기는 데이터는 Google의 개인정보 보호 정책에 따라 처리되고 있습니다.
-            따라서 인공지능 데이터가 학습에 사용될수도 있습니다.따라서 민감한 정보를 입력하지 말아주세요.
-         </h4>
-        <h5>NotepadX v10.1-integrated Deployed under Mit licence except the icon and Google Gemini API</h5>
+        <h3>저작권 정보</h3>
         <a className = "greenlink" href="https://www.flaticon.com/free-icons/notepad" title="notepad icons">Notepad icons created by Freepik - Flaticon</a>
+        <h3>NotepadX 정보</h3>
+        <h5>NotepadX v10.1-integrated Deployed under Mit licence except the icon and Google Gemini API</h5>
     </footer>
     </>
   );
