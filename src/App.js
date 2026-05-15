@@ -80,7 +80,7 @@ function summarize(){
     </div>
     <div id='state'>{filestate}</div>
     <main>
-        <textarea id = "textarea" value={data} onChange={(e) => setData(e.target.value)} style={{fontSize:textsize+"px"}} placeholder='아무글자나 임력해보세요!'></textarea>
+        <textarea id = "textarea" value={data} onChange={(e) => setData(e.target.value)} style={{fontSize:textsize+"px"}} placeholder='창의적인 무언가를 작성해보세요.'></textarea>
     </main>
     <br></br>
     <footer id = "footer">
