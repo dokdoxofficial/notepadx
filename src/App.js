@@ -21,10 +21,6 @@ useEffect(() => {
   if (data !==""){
        setfilestate("저장됨-새로운 변동사항이 자동으로 저장됩니다.")
   } 
-  if (data.includes("notepadx")){
-     setData(data.replace(data,"NotepadX!-v10.1-integrated"))
-  }
-
 }, [data]);
 
 
@@ -84,7 +80,7 @@ function summarize(){
     </main>
     <br></br>
     <footer id = "footer">
-        <h3>NotepadX 를 어디에 활용할수있을까요?</h3>
+        <h3>NotepadX를 활용하기</h3>
         <h4>NotepadX 에 큰 회색 영역에서 모든 글자들을 입력할수있습니다.이를 활용해서 다양한 
             용도에서 사용할수있습니다!예를 들어 학교에서 배운 새로운 지식을 적어두거나 무언가를 암기할때 또는 공부할때 이를 활용할수있습니다.또한 회사
             에서 여러 작업을 수행하면서 필요한 정보를 미리 입력할수도 있습니다.
@@ -92,7 +88,8 @@ function summarize(){
         <h3>저작권 정보</h3>
         <a className = "greenlink" href="https://www.flaticon.com/free-icons/notepad" title="notepad icons">Notepad icons created by Freepik - Flaticon</a>
         <h3>NotepadX 정보</h3>
-        <h5>NotepadX v10.1-integrated Deployed under Mit licence except the icon and Google Gemini API</h5>
+        <h5>NotepadX v10.2-integrated Deployed under Mit licence except the icon and Google Gemini API</h5>
+        <a className='greenlink' href='https://ntxlink.streamlit.app'>NotepadX에 대한 더 많은 정보 알아보기&기여자 알아보기</a>
     </footer>
     </>
   );
