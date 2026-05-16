@@ -42,6 +42,7 @@ footer{
   border:1px solid white;
   border-radius: 2px;
   margin:5px;
+  width:100%;
 }
 #state{
   background-color: #414141; 

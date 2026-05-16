@@ -87,7 +87,7 @@ function summarize(){
         <h3>저작권 정보</h3>
         <a className = "greenlink" href="https://www.flaticon.com/free-icons/notepad" title="notepad icons">Notepad icons created by Freepik - Flaticon</a>
         <h3>NotepadX 정보</h3>
-        <h5>NotepadX v10.2-integrated Deployed under Mit licence except the icon and Google Gemini API</h5>
+        <h5>NotepadX v10.2.1-integrated Deployed under Mit licence except the icon and Google Gemini API</h5>
         <a className='greenlink' href='https://github.com/dokdoxofficial/notepadx'>NotepadX Github 방문하기</a>
     </footer>
     </>
