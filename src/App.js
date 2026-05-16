@@ -78,7 +78,6 @@ function summarize(){
     <main>
         <textarea id = "textarea" value={data} onChange={(e) => setData(e.target.value)} style={{fontSize:textsize+"px"}} placeholder='창의적인 무언가를 작성해보세요.'></textarea>
     </main>
-    <br></br>
     <footer id = "footer">
         <h3>NotepadX를 활용하기</h3>
         <h4>NotepadX 에 큰 회색 영역에서 모든 글자들을 입력할수있습니다.이를 활용해서 다양한 
@@ -89,7 +88,7 @@ function summarize(){
         <a className = "greenlink" href="https://www.flaticon.com/free-icons/notepad" title="notepad icons">Notepad icons created by Freepik - Flaticon</a>
         <h3>NotepadX 정보</h3>
         <h5>NotepadX v10.2-integrated Deployed under Mit licence except the icon and Google Gemini API</h5>
-        <a className='greenlink' href='https://ntxlink.streamlit.app'>NotepadX에 대한 더 많은 정보 알아보기&기여자 알아보기</a>
+        <a className='greenlink' href='https://github.com/dokdoxofficial/notepadx'>NotepadX Github 방문하기</a>
     </footer>
     </>
   );
