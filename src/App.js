@@ -38,13 +38,16 @@ useEffect(() => {
 
 const genAI = new GoogleGenerativeAI(process.env.REACT_APP_GEMINI_API_KEY);
 
+
+
 const askGemini = async () => {
   const model = genAI.getGenerativeModel({
     model: "gemini-2.5-flash",
   });
-  const result = await model.generateContent("당신은 유능한 글쓰기를 하는 사람입니다!"+data + "에 맞는 잛은 영감을 줄수있는 80자 사이정도의 글을 작성해주세요. ");
+  setfilestate("내용을 생성 하는중-잠시만 기다려주세요.")
+  const result = await model.generateContent("당신은 세상에 모든 지식을 알고 있는 페르소나 입니다.주어진값:"+data + "(주어진 값이 질문이면 질문에 대한 답을 적어주세요.) 에 대한 글을 작성해주세요.약 6문장정도 되어야 합니다.내용을 자세하고 디테일 있게 적어주세요.");
   const text = result.response.text();
-  setData(text + data)
+  setData(text+"\n"+data)
 };
 
 function save(){
@@ -56,9 +59,10 @@ function summarize(){
   const model = genAI.getGenerativeModel({
     model: "gemini-2.5-flash",
   }); 
-  model.generateContent("당신은 유능한 요약가입니다!"+data + "를 요약해주세요.요약할때는 세밀한 내용을 잘 살리되 너무 과하지 않게 해주세요.").then((result) => {
-    const text = result.response.text();
-    setData(text + data)
+  setfilestate("요약 하는중-잠시만 기다려주세요.")
+  model.generateContent("당신은 유능한 요약전문가입니다.!important"+data + "를 요약해주세요.요약할때는 세밀한 내용을 잘 살리되 너무 감성적으로는 적지말고 일부 이성적인 내용은 이성적으로 살려주세요!출력물은 4문장 정도 이외로 작성해주세요.").then((result) => {
+  const text = result.response.text();
+  setData(text+"\n"+data)
   }
   )
 }
