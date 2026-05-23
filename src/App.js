@@ -47,7 +47,7 @@ const askGemini = async () => {
   setfilestate("내용을 생성 하는중-잠시만 기다려주세요.")
   const result = await model.generateContent("당신은 세상에 모든 지식을 알고 있는 페르소나 입니다.주어진값:"+data + "(주어진 값이 질문이면 질문에 대한 답을 적어주세요.) 에 대한 글을 작성해주세요.약 6문장정도 되어야 합니다.내용을 자세하고 디테일 있게 적어주세요.");
   const text = result.response.text();
-  setData(text+"\n"+data)
+  setData(text+"\n\n"+data)
 };
 
 function save(){
