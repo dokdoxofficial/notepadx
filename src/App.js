@@ -68,31 +68,35 @@ function summarize(){
 }
   return (
     <>
-    <h1>NotepadX</h1>
+    <h1>무료 온라인 메모장</h1>
     <div className="bar">
        <button><i class="fa-solid fa-plus" onClick={()=>settextsize(textsize+10)}></i></button>
        <button><i class="fa-solid fa-minus" onClick={()=>settextsize(textsize-10)}></i></button>
        <button onClick={()=>window.print()}><i class="fa-solid fa-print"></i></button>
        <button><a id = "info" href='#footer'><i class="fa-regular fa-circle-question"></i></a></button>
        <button onClick={save}><i class="fa-solid fa-down-long"></i></button>
-       <button onClick={askGemini}>작성된 내용으로 ai글쓰기</button>
-       <button onClick={summarize}>내용요약</button>
+       <button onClick={askGemini}>작성된 내용을 바탕으로 AI글쓰기</button>
+       <button onClick={summarize}>AI요약하기</button>
     </div>
     <div id='state'>{filestate}</div>
     <main>
         <textarea id = "textarea" value={data} onChange={(e) => setData(e.target.value)} style={{fontSize:textsize+"px"}} placeholder='창의적인 무언가를 작성해보세요.'></textarea>
     </main>
     <footer id = "footer">
-        <h3>NotepadX를 활용하기</h3>
-        <h4>NotepadX 에 큰 회색 영역에서 모든 글자들을 입력할수있습니다.이를 활용해서 다양한 
-            용도에서 사용할수있습니다!예를 들어 학교에서 배운 새로운 지식을 적어두거나 무언가를 암기할때 또는 공부할때 이를 활용할수있습니다.또한 회사
-            에서 여러 작업을 수행하면서 필요한 정보를 미리 입력할수도 있습니다.
-         </h4>
-        <h3>저작권 정보</h3>
+        <h3>왜 NotepadX.xyz를 사용해야 되나요?</h3>
+        <h5>우선 불필요한 광고가 없고 무료이며 근본적으로 개인정보가 보호됩니다.특히 localStorage 를 사용하기때문에
+          브라우저에 메모한 내용이 저장됩니다.또 인공지능을 사용한 글쓰기&요약기능을 사용해서 영감을 얻을수도 있습니다.
+        </h5>
+        <h3>메모장을 어디에 활용할수있나요?</h3>
+        <h5>메모장을 활용해서 실제로 유용하게 이용할수있습니다.예를 들어서,학생이라면 학교에서
+          외우거나 공부한 내용들을 메모장에 적어볼수있습니다.또한 회사에서 해야될 작업을 수행할때 메모장을
+          사용하면 여러 정보를 정리하고 분류하여 처리할수있습니다.또한 기록된 정보가 브라우저 상에 저장되므로 
+          안심하고 사용할수있습니다.
+         </h5>
+        <h3>지금 메모를 작성해보세요.</h3>
+        <h5>무료 온라인 메모장(NotepadX.xyz)는 이 기기에 즉시 저장되므로 개인정보가 보호됩니다.따라서 안심하고 이용할수있습니다.</h5>
         <a className = "greenlink" href="https://www.flaticon.com/free-icons/notepad" title="notepad icons">Notepad icons created by Freepik - Flaticon</a>
-        <h3>NotepadX 정보</h3>
-        <h5>NotepadX v10.5-Deployed under Mit licence except the icon and Google Gemini API</h5>
-        <a className='greenlink' href='https://github.com/dokdoxofficial/notepadx'>NotepadX Github 방문하기</a>
+        
     </footer>
     </>
   );

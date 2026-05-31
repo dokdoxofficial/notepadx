@@ -9,29 +9,31 @@
 }
 body{
   font-family: font-gmarket;
-  background-color: rgba(0, 0, 0, 0.84);
-  color: rgb(197, 193, 193);
+  color: rgb(0, 0,0);
+}
+textarea,.bar,footer,#state{
+  margin:2;
 }
 textarea{
-  background-color: rgb(69, 69, 69);
-  color:white;
+  background-color: #9a9a9a;
+  color:rgb(255, 255, 255);
   width: 100%;
   height: 500pt;
   font-family: font-gmarket;
-  border:1px solid white;
+  border:1px solid rgb(0, 0, 0);
   border-radius: 2px;
-  margin:5px;
+
 }
 .bar{
   display: flex;
   gap:10px;
-  background-color:  #8f8f8f;;
-  color: rgb(0, 0, 0);
+  background-color:  #ffffff;;
+  color: rgb(0,0,0);
   width: 100%;
   flex-wrap: wrap;
-  border:1px solid white;
+  border:1px solid rgb(0, 0, 0);
   border-radius: 2px;
-  margin:5px;
+
 }
 button{
   border:1px solid rgb(0, 0, 0);
@@ -39,18 +41,17 @@ button{
   font-family: font-gmarket;
 }
 footer{
-  border:1px solid white;
+  border:1px solid rgb(0, 0, 0);
   border-radius: 2px;
-  margin:5px;
+
   width:100%;
 }
 #state{
-  background-color: #414141; 
-  color:white;
+  background-color: #ffffff; 
+  color:rgb(0, 0, 0);
   width: 100%;
-  border:1px solid white;
+  border:1px solid rgb(0, 0, 0);
   border-radius: 2px;
-  margin:5px;
 }
 
 .greenlink{
