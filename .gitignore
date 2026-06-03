@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
@@ -11,19 +9,33 @@
 # production
 /build
 
-# misc
+# macOS
 .DS_Store
+
+# environment variables
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Local Netlify folder
+# Netlify
 .netlify
-.env
-#dmg file
+
+# Python (혹시 NotepadX 빌드용으로 사용한다면)
+__pycache__/
+*.pyc
+
+# macOS apps and disk images
+*.app
 *.dmg
+
+# PyInstaller
+dist/
+build/
+*.spec
