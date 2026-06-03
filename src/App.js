@@ -96,7 +96,8 @@ function summarize(){
         <h3>지금 메모를 작성해보세요.</h3>
         <h5>무료 온라인 메모장(NotepadX.xyz)는 이 기기에 즉시 저장되므로 개인정보가 보호됩니다.따라서 안심하고 이용할수있습니다.</h5>
         <a className = "greenlink" href="https://www.flaticon.com/free-icons/notepad" title="notepad icons">Notepad icons created by Freepik - Flaticon</a>
-        
+        <br></br>
+        <a href='./NotepadX.dmg'download="NotepadX.dmg" className='greenlink'>NotepadX for MacOS 설치하기</a>
     </footer>
     </>
   );
