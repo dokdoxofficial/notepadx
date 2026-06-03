@@ -7,10 +7,12 @@
 *{
   box-sizing: border-box;
 }
+
 body{
   font-family: font-gmarket;
   color: rgb(0, 0,0);
 }
+
 textarea,.bar,footer,#state{
   margin:2;
 }
