@@ -27,7 +27,7 @@ yarn-error.log*
 # Netlify
 .netlify
 
-# Python (혹시 NotepadX 빌드용으로 사용한다면)
+# Python
 __pycache__/
 *.pyc
 

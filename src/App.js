@@ -69,14 +69,15 @@ function summarize(){
   return (
     <>
     <h1>무료 온라인 메모장</h1>
+    <h3>온라인으로 무료로 메모를 작성할수있는 메모장</h3>
     <div className="bar">
-       <button><i class="fa-solid fa-plus" onClick={()=>settextsize(textsize+10)}></i></button>
-       <button><i class="fa-solid fa-minus" onClick={()=>settextsize(textsize-10)}></i></button>
-       <button onClick={()=>window.print()}><i class="fa-solid fa-print"></i></button>
-       <button><a id = "info" href='#footer'><i class="fa-regular fa-circle-question"></i></a></button>
-       <button onClick={save}><i class="fa-solid fa-down-long"></i></button>
-       <button onClick={askGemini}>작성된 내용을 바탕으로 AI글쓰기</button>
-       <button onClick={summarize}>AI요약하기</button>
+       <button aria-label='글자크기 크게하기'><i class="fa-solid fa-plus" onClick={()=>settextsize(textsize+10)}></i></button>
+       <button aria-label='글자크기 작게하기'><i class="fa-solid fa-minus" onClick={()=>settextsize(textsize-10)}></i></button>
+       <button aria-label='인쇄하기' onClick={()=>window.print()}><i class="fa-solid fa-print"></i></button>
+       <button aria-label='도움말 보기'><a id = "info" href='#footer'><i class="fa-regular fa-circle-question"></i></a></button>
+       <button aria-label='다운로드 하기' onClick={save}><i class="fa-solid fa-down-long"></i></button>
+       <button aria-label='ai 글쓰기' onClick={askGemini}>작성된 내용을 바탕으로 AI글쓰기</button>
+       <button aria-label='ai 요약하기' onClick={summarize}>AI요약하기</button>
     </div>
     <div id='state'>{filestate}</div>
     <main>
