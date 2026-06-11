@@ -4,7 +4,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { useState , useEffect} from 'react';
 
 export default function App() {
-const [textsize, settextsize] = useState(25)
+const [textsize, settextsize] = useState(20)
 const [data, setData] = useState("");
 const [filestate, setfilestate] = useState("도움말-내용을 입력해보세요.");
 
@@ -81,24 +81,18 @@ function summarize(){
     </div>
     <div id='state'>{filestate}</div>
     <main>
-        <textarea id = "textarea" value={data} onChange={(e) => setData(e.target.value)} style={{fontSize:textsize+"px"}} placeholder='창의적인 무언가를 작성해보세요.'></textarea>
+        <textarea id = "textarea" value={data} onChange={(e) => setData(e.target.value)} style={{fontSize:textsize+"px"}} placeholder='여기에 아무거나 입력해보세요.'></textarea>
     </main>
     <footer id = "footer">
-        <h3>왜 NotepadX.xyz를 사용해야 되나요?</h3>
-        <h5>우선 불필요한 광고가 없고 무료이며 근본적으로 개인정보가 보호됩니다.특히 localStorage 를 사용하기때문에
-          브라우저에 메모한 내용이 저장됩니다.또 인공지능을 사용한 글쓰기&요약기능을 사용해서 영감을 얻을수도 있습니다.
-        </h5>
-        <h3>메모장을 어디에 활용할수있나요?</h3>
-        <h5>메모장을 활용해서 실제로 유용하게 이용할수있습니다.예를 들어서,학생이라면 학교에서
-          외우거나 공부한 내용들을 메모장에 적어볼수있습니다.또한 회사에서 해야될 작업을 수행할때 메모장을
-          사용하면 여러 정보를 정리하고 분류하여 처리할수있습니다.또한 기록된 정보가 브라우저 상에 저장되므로 
-          안심하고 사용할수있습니다.
-         </h5>
+        <h3>무료 온라인 메모장을 다양한 용도로 사용해보세요.</h3>
+        <ul>
+        <li>학교 과제에서 여러 아이디어를 빠르게 정리할수있습니다.</li>
+        <li>회사 또는 직장에서 주어진 업무를 간편하게 정리할수있습니다.</li>
+        <li>일상에서 기록해야 될 일들을 간편하게 기록할수있습니다.</li>
+        </ul>
         <h3>지금 메모를 작성해보세요.</h3>
-        <h5>무료 온라인 메모장(NotepadX.xyz)는 이 기기에 즉시 저장되므로 개인정보가 보호됩니다.따라서 안심하고 이용할수있습니다.</h5>
+        <h4>무료 온라인 메모장(NotepadX.xyz)는 이 기기에 즉시 저장되므로 되므로 간편하고 빠르게 이용할수있습니다.지금 즉시 이용해보세요!</h4>
         <a className = "greenlink" href="https://www.flaticon.com/free-icons/notepad" title="notepad icons">Notepad icons created by Freepik - Flaticon</a>
-        <br></br>
-        <a href='./NotepadX.dmg'download="NotepadX.dmg" className='greenlink'>NotepadX for MacOS 설치하기</a>
     </footer>
     </>
   );
