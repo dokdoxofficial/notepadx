@@ -1,21 +1,27 @@
 @font-face {
     font-family: 'GMarketSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
     font-weight: 300;
     font-display: swap;
 }
-body {
-  margin: 0;
-  font-family: 'GMarketSans';
-  background-color: rgb(31, 30, 30);
-  color:white
+
+* {
+  box-sizing: border-box;
 }
 
-.bar{
+
+body{
+  font-family: 'GMarketSans';
+  background-color: rgb(31, 30, 30);
+  color:white;
+}
+
+.bar {
   background-color: gray;
-  width:100%;
-  display:flex;
-  gap:13px;
+  width: 100%;
+  display: flex;
+  gap: 16px;
 }
 #state{
   background-color: rgb(161, 189, 162);
@@ -37,6 +43,27 @@ textarea::placeholder{
   color:rgb(0, 255, 81);
   opacity: 0.5;
 }
+
+
 footer{
   border:white 1px solid
+}
+.greenlink{
+  color:rgb(71, 237, 0);
+  text-decoration: none;
+}
+h2{
+  font-size: 14pt;
+}
+
+
+/*다크모드 관련 설정 css*/
+.dark-mode{
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+}
+
+#darkmodebutton{
+  font-size: 25px;
+  text-align: right;
 }
