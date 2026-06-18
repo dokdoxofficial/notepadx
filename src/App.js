@@ -76,7 +76,6 @@ function darkmode() {
     <>
     <h1>무료 온라인 메모장</h1>
     <h2>온라인으로 무료로 메모를 작성할수있는 메모장</h2>
-    <i onClick={darkmode} class="fa-solid fa-moon" id='darkmodebutton'></i>
     <div className="bar">
        <button aria-label='글자크기 크게하기'><i class="fa-solid fa-plus" onClick={()=>settextsize(textsize+10)}></i></button>
        <button aria-label='글자크기 작게하기'><i class="fa-solid fa-minus" onClick={()=>settextsize(textsize-10)}></i></button>
@@ -85,6 +84,7 @@ function darkmode() {
        <button aria-label='다운로드 하기' onClick={save}><i class="fa-solid fa-down-long"></i></button>
        <button aria-label='ai 글쓰기' onClick={askGemini}>작성된 내용을 바탕으로 AI글쓰기</button>
        <button aria-label='ai 요약하기' onClick={summarize}>AI요약하기</button>
+       <button aria-label='다크모드 토글/라이트 모드' onClick={darkmode}><i class="fa-solid fa-moon" id='darkmodebutton'></i>다크모드</button>
     </div>
     <div id='state'>{filestate}</div>
     <main>
