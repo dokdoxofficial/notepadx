@@ -10,19 +10,26 @@
   box-sizing: border-box;
 }
 
-
 body{
   font-family: 'GMarketSans';
   background-color: rgb(31, 30, 30);
   color:white;
 }
 
+/*메뉴바 css*/
 .bar {
+  display: flex;
   background-color: gray;
   width: 100%;
-  display: flex;
-  gap: 16px;
+  gap:10px;
+  flex-wrap: wrap;
 }
+
+.bar button span {
+  white-space: nowrap;
+}
+
+/*알림영역 css*/
 #state{
   background-color: rgb(161, 189, 162);
   width:100%;
@@ -30,6 +37,7 @@ body{
 #info{
   color:black;
 }
+/*메모장 영역 css */
 textarea{
   background-color: rgb(181, 181, 181);
   color: white;
@@ -37,6 +45,7 @@ textarea{
   width:100%;
   height:500px;
   font-size:30pt;
+  border:2px solid white;
 }
 
 textarea::placeholder{
@@ -45,24 +54,24 @@ textarea::placeholder{
 }
 
 
+
+
 footer{
   border:white 1px solid
 }
-.greenlink{
-  color:rgb(71, 237, 0);
-  text-decoration: none;
-}
+
 h2{
   font-size: 14pt;
 }
 
+.greenlink{
+  color:rgb(71, 237, 0);
+  text-decoration: none;
+}
 
-/*다크모드 관련 설정 css*/
+/*다크모드css*/
 .dark-mode{
   background-color: rgb(255, 255, 255);
   color:rgb(0, 0, 0);
 }
 
-#darkmodebutton{
-  text-align: right;
-}
