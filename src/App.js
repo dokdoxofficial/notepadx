@@ -7,7 +7,7 @@ import { useState , useEffect} from 'react';
 export default function App() {
 const [textsize, settextsize] = useState(20)
 const [data, setData] = useState("");
-const [filestate, setfilestate] = useState("도움말-AI기능을 이용하여 작문 또는 요약을 할려면 메모영역에 입력하고 버트을 클릭해보세요. ");
+const [filestate, setfilestate] = useState("도움말-AI기능을 이용하여 작문 또는 요약을 할려면 메모영역에 입력하고 버튼을 클릭해보세요. ");
 
 useEffect(() => {
   const saved = localStorage.getItem("textareadata");
