@@ -52,7 +52,7 @@ const askGemini = async () => {
 };
 
 function save(){
-    setfilestate("도움말-저장할려면 'set as pdf'또는'pdf 로 저장'을클릭하고 save버튼을 클릭하세요.")
+    setfilestate("도움말-pdf 파일로 저장할려면 'set as pdf'또는'pdf 로 저장'을클릭하고 save버튼을 클릭하세요.")
     window.print()
 }
 
@@ -98,7 +98,7 @@ function darkmode() {
         <li>일상에서 기록해야 될 일들을 간편하게 기록할수있습니다.</li>
         </ul>
         <h3>지금 메모를 작성해보세요.</h3>
-        <h4>무료 온라인 메모장(NotepadX.xyz)는 이 기기에 즉시 저장되므로 되므로 간편하고 빠르게 이용할수있습니다.지금 즉시 이용해보세요!</h4>
+        <h4>무료 온라인 메모장(NotepadX.xyz)는 이 기기의 브라우저상에 즉시 저장되므로 되므로 간편하고 빠르게 이용할수있습니다.지금 즉시 이용해보세요!</h4>
         <a className = "greenlink" href="https://www.flaticon.com/free-icons/notepad" title="notepad icons">Notepad icons created by Freepik - Flaticon</a>
         <br></br>
         <a className = 'greenlink' href='https://www.notepadxprivacy.netlify.app'>NotepadX 의 개인정보 처리약관</a>
