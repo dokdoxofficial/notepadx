@@ -25,7 +25,7 @@ body{
 }
 
 #state{
-  background-color: rgb(161, 189, 162);
+  background-color: rgb(15, 69, 11);
   width:100%;
 }
 #info{
@@ -43,8 +43,8 @@ textarea{
 }
 
 textarea::placeholder{
-  color:rgb(110, 93, 246);
-  opacity: 0.42;
+  color:rgb(10, 60, 14);
+  opacity: 0.32;
 }
 
 /*기타 영역 css*/
@@ -62,10 +62,22 @@ h2{
   text-decoration: none;
 }
 
-/*다크모드 관련 css*/
-.dark-mode{
-  background-color: rgb(255, 255, 255);
-  color:rgb(0, 0, 0);
+/*light mode css*/
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  footer{
+     border:rgb(0, 0, 0) 1px solid
+  }
+  textarea{
+   border:2px solid rgb(0, 0, 0);
+  }
+  #state{
+    color:white;
+  }
 }
 
 
@@ -83,8 +95,12 @@ h2{
    h1,h2{
     display:none;
    }
+   textarea{
+    border:none;
+   }
    textarea::placeholder{
     color:black;
    }
+   
 }
 

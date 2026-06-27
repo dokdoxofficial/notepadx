@@ -68,10 +68,7 @@ function summarize(){
   )
 }
 
-function darkmode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
+
   return (
     <>
     <h1>무료 온라인 메모장</h1>
@@ -79,12 +76,11 @@ function darkmode() {
     <div className="bar">
        <button aria-label='글자크기 크게하기' onClick={()=>settextsize(textsize+10)}><i class="fa-solid fa-plus"></i></button>
        <button aria-label='글자크기 작게하기' onClick={()=>settextsize(textsize-10)}><i class="fa-solid fa-minus"></i></button>
-       <button aria-label='인쇄하기' onClick={()=>window.print()}><i class="fa-solid fa-print"></i></button>
-       <button aria-label='도움말 보기'><a id = "info" href='#footer'><i class="fa-regular fa-circle-question" title="도움말 보기"></i></a></button>
-       <button aria-label='다운로드 하기' onClick={save}><i class="fa-solid fa-down-long"></i></button>
        <button aria-label='ai 글쓰기' onClick={askGemini}><span>AI글쓰기</span></button>
        <button aria-label='ai 요약하기' onClick={summarize}><span>AI요약</span></button>
-       <button aria-label='다크모드 토글/라이트 모드' onClick={darkmode}><i class="fa-solid fa-moon" id='darkmodebutton'></i></button>
+       <button aria-label='인쇄하기' onClick={()=>window.print()}><i class="fa-solid fa-print"></i></button>
+       <button aria-label='다운로드 하기' onClick={save}><i class="fa-solid fa-down-long"></i></button>
+       <button aria-label='도움말 보기'><a id = "info" href='#footer'><i class="fa-regular fa-circle-question" title="도움말 보기"></i></a></button>
     </div>
     <div id='state'>{filestate}</div>
     <main>
@@ -101,7 +97,7 @@ function darkmode() {
         <h4>무료 온라인 메모장(NotepadX.xyz)는 이 기기의 브라우저상에 즉시 저장되므로 되므로 간편하고 빠르게 이용할수있습니다.지금 즉시 이용해보세요!</h4>
         <a className = "greenlink" href="https://www.flaticon.com/free-icons/notepad" title="notepad icons">Notepad icons created by Freepik - Flaticon</a>
         <br></br>
-        <a className = 'greenlink' href='https://www.notepadxprivacy.netlify.app'>NotepadX 의 개인정보 처리약관</a>
+        <a className = 'greenlink' href='https://notepadxprivacy.netlify.app'>NotepadX 의 개인정보 처리약관</a>
     </footer>
     </>
   );
