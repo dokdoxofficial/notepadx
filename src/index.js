@@ -9,7 +9,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/list" element={<List />} />
+      <Route path="/share" element={<List />} />
     </Routes>
   </BrowserRouter>,
 );
