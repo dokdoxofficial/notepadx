@@ -77,11 +77,7 @@ export default function App() {
             <span>AI요약</span>
           </button>
           <button aria-label ="인쇄하기" onClick={window.print}><i class="fa-solid fa-print"></i></button>
-          <button aria-label="공유하기">
-            <Link to="/list" className="blacklink">
-            <i class="fa-regular fa-share-from-square"></i>
-            </Link>
-          </button>
+   
         </div>
         <textarea
           id="textarea"
@@ -91,7 +87,8 @@ export default function App() {
           placeholder="여기에 아무거나 입력해보세요."
         ></textarea>
       </main>
-      <footer>
+      <br></br>
+      <footer className="box">
         <h3>무료 온라인 메모장을 다양한 용도로 사용해보세요.</h3>
         <ul>
         <li>학교 과제에서 여러 아이디어들을 빠르게 정리할 수 있습니다.</li>
